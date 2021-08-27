@@ -3,6 +3,7 @@ general:
   productiveBranch: 'main'
   runArtifactVersioningOnPod: false
   VersioningType: 'library'
+  verbose: true
 stages:
   Build:
     mavenExecuteStaticCodeChecks: false
