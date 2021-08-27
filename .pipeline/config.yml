@@ -2,6 +2,7 @@ general:
   buildTool: "maven"
   productiveBranch: 'main'
   runArtifactVersioningOnPod: false
+  VersioningType: 'library'
 stages:
   Build:
     mavenExecuteStaticCodeChecks: false
@@ -16,8 +17,6 @@ stages:
     cloudFoundryDeploy: false
     tmsUpload: false
 steps:
-  artifactPrepareVersion:
-    versioningType: "library"
   cloudFoundryDeploy:
     mtaDeployParameters: "-f --version-rule ALL"
 
