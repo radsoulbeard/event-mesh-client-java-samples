@@ -1,1 +1,22 @@
+general:
+  buildTool: "maven"
+  productiveBranch: 'main'
+stages:
+  Build:
+    mavenExecuteStaticCodeChecks: false
+    npmExecuteLint: false
+  Additional Unit Tests:
+    npmExecuteScripts: false
+    karmaExecuteTests: false
+  Acceptance:
+    cloudFoundryDeploy: false
+    uiVeri5ExecuteTests: false
+  Release:
+    cloudFoundryDeploy: false
+    tmsUpload: false
+steps:
+  artifactPrepareVersion:
+    versioningType: "library"
+  cloudFoundryDeploy:
+    mtaDeployParameters: "-f --version-rule ALL"
 
