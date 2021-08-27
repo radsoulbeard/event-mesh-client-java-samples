@@ -1,6 +1,5 @@
 general:
   buildTool: "maven"
-  verbose: true
 stages:
   Build:
     mavenExecuteStaticCodeChecks: false
