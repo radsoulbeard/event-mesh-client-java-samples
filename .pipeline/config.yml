@@ -1,9 +1,5 @@
 general:
   buildTool: "maven"
-  productiveBranch: 'main'
-  runArtifactVersioningOnPod: false
-  VersioningType: 'library'
-  verbose: true
 stages:
   Build:
     mavenExecuteStaticCodeChecks: false
@@ -18,6 +14,8 @@ stages:
     cloudFoundryDeploy: false
     tmsUpload: false
 steps:
+  artifactPrepareVersion:
+    versioningType: "library"
+    dockerImage: "devxci/mbtci@sha256:5382a80333c0c1970d99327b30178bfa3f316e5f1e675639237b60e5eb5f8d00"
   cloudFoundryDeploy:
     mtaDeployParameters: "-f --version-rule ALL"
-
