@@ -1,6 +1,7 @@
 general:
   buildTool: "maven"
   productiveBranch: 'main'
+  runArtifactVersioningOnPod: false
 stages:
   Build:
     mavenExecuteStaticCodeChecks: false
