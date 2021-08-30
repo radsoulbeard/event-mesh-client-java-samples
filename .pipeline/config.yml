@@ -1,5 +1,7 @@
 general:
   buildTool: "maven"
+  productiveBranch: 'main'
+  verbose: true
 stages:
   Build:
     mavenExecuteStaticCodeChecks: false
