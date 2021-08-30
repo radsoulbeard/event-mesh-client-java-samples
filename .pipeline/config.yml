@@ -1,7 +1,7 @@
 general:
   buildTool: "maven"
   productiveBranch: 'main'
-   jenkinsKubernetes:
+  jenkinsKubernetes:
     jnlpAgent: 'jenkins/jnlp-slave@sha256:30732bbe8afbe63652b2903d308ba405b16290d81a08688b75a51a6e0f1b4087'
     securityContext:
       runAsUser: 1000
