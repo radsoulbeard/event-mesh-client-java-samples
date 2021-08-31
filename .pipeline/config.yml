@@ -23,5 +23,6 @@ stages:
 steps:
   artifactPrepareVersion:
     versioningType: "library"
+    dockerImage: "maven@sha256:537b4aa4a4df2f099963b1db58bdc06007301f0ac68a8641fb1d89ecc79c7823"
   cloudFoundryDeploy:
     mtaDeployParameters: "-f --version-rule ALL"
