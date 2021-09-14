@@ -1,6 +1,6 @@
 general:
   buildTool: "maven"
-  productiveBranch: 'master'
+  productiveBranch: 'main'
   verbose: true
 stages:
   Build:
